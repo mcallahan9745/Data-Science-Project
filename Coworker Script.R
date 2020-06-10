@@ -28,7 +28,7 @@ library(RWeka)
 # Data is loaded from the CSV file to a data frame.
 ################
 
-mentalHealthData <- read.csv("C:/Users/miriamcallahan/Desktop/GitHub Projects/Data-Science-Project/survey.csv")
+mentalHealthData <- read.csv("survey.csv")
 writeLines("\nMental Health in Tech Data Samples:")
 print(head(mentalHealthData))
 

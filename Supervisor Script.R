@@ -29,7 +29,7 @@ library(RWeka)
 # Data is loaded from the CSV file to a data frame and the first few lines are shown.
 ################
 
-mentalHealthData <- read.csv("~/workspace/FinalProject/survey.csv")
+mentalHealthData <- read.csv("survey.csv")
 writeLines("\nMental Health in Tech Data Samples:")
 print(head(mentalHealthData))
 
@@ -167,7 +167,7 @@ table(mentalHealthData$obs_consequence)
 # feature.
 ################
 
-supervisorFeatureSubset <- mentalHealthData2[c(1:18, 20:24)]
+supervisorFeatureSubset <- mentalHealthData[c(1:18, 20:24)]
 supervisorFeatureSubset <- supervisorFeatureSubset[, c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 
                                                        20, 21, 22, 23, 19)]
 tableView = gvisTable(supervisorFeatureSubset)
